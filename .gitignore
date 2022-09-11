@@ -16,3 +16,10 @@
 .prettierignore
 
 README-template.md
+node_modules/
+.parcel-cache/
+dist/
+.env
+.DS_Store
+coverage/
+.vscode/
