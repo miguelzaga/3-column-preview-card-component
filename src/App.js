@@ -3,7 +3,7 @@ import Card from "./components/Card.js";
 
 function App() {
   return (
-    <main>
+    <main className="component">
       <Card
         title="Sedans"
         text="Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip."
