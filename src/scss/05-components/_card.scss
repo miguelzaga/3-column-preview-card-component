@@ -1,44 +1,59 @@
 @use "./../01-abstracts/" as *;
 
-.card {
-	padding: 48px 47.5px 48px 49px;
-
-	&__img {
-		max-width: 64px;
-		margin-bottom: 35px;
-	}
-
-	&__title {
-		margin-bottom: 25px;
-	}
-
-	&__text {
-		margin-bottom: 25px;
-	}
-
-	&.card--0 {
-		background-color: $color-yellow;
-		
-		& .card__btn {
-			color: $color-yellow;
-		}
-	}
-	
-	&.card--1 {
-		background-color: $color-teal;
-		
-		& .card__btn {
-			color: $color-teal;
-		}
-	}
-		
-	&.card--2 {
-		background-color: $color-green;
-		
-		& .card__btn {
-			color: $color-green;
-		}
-	}
+.cards {
+  margin: 93px 24px 83px;
+  background-color: $color-yellow;
+  border-radius: 8px;
 }
 
+.card {
+  padding: 48px 47.5px 48px 49px;
+  border-radius: 8px;
 
+  &__img {
+    max-width: 64px;
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+    opacity: 0.75;
+  }
+
+  &__btn {
+    padding: 11px 31.5px 12px;
+    border-radius: 25px;
+    background-color: $color-bone;
+    border-style: none;
+  }
+
+  &.card--0 {
+    background-color: $color-yellow;
+
+    & .card__btn {
+      color: $color-yellow;
+    }
+  }
+
+  &.card--1 {
+    background-color: $color-teal;
+
+    & .card__btn {
+      color: $color-teal;
+    }
+  }
+
+  &.card--2 {
+    background-color: $color-green;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    & .card__btn {
+      color: $color-green;
+    }
+  }
+}
