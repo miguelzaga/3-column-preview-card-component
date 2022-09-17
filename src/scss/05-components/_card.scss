@@ -25,35 +25,55 @@
   }
 
   &__btn {
-    padding: 11px 31.5px 12px;
+    padding: 0px 31.5px 2px;
+    height: 48px;
     border-radius: 25px;
     background-color: $color-bone;
-    border-style: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+	    background-color: transparent;
+	    border-color: white;
+	    color: white;
+    }
   }
 
-  &.card--0 {
+  &--0 {
     background-color: $color-yellow;
 
     & .card__btn {
       color: $color-yellow;
+
+      &:hover {
+	      color: inherit;
+      }	
     }
   }
 
-  &.card--1 {
+  &--1 {
     background-color: $color-teal;
 
     & .card__btn {
       color: $color-teal;
+
+      &:hover {
+	      color: inherit;
+      }	
     }
   }
 
-  &.card--2 {
+  &--2 {
     background-color: $color-green;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 
     & .card__btn {
       color: $color-green;
+
+      &:hover {
+	      color: inherit;
+      }	
     }
   }
 }
