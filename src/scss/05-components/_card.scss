@@ -1,0 +1,44 @@
+@use "./../01-abstracts/" as *;
+
+.card {
+	padding: 48px 47.5px 48px 49px;
+
+	&__img {
+		max-width: 64px;
+		margin-bottom: 35px;
+	}
+
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		margin-bottom: 25px;
+	}
+
+	&.card--0 {
+		background-color: $color-yellow;
+		
+		& .card__btn {
+			color: $color-yellow;
+		}
+	}
+	
+	&.card--1 {
+		background-color: $color-teal;
+		
+		& .card__btn {
+			color: $color-teal;
+		}
+	}
+		
+	&.card--2 {
+		background-color: $color-green;
+		
+		& .card__btn {
+			color: $color-green;
+		}
+	}
+}
+
+
