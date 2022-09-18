@@ -25,6 +25,7 @@ var cards = [
 function App() {
   return (
     <main className="cards">
+      <h1 style={{ display: "none" }}>Cards Component</h1>
       {cards.map(function renderCard(card, i) {
         let id = `card--${i}`;
         return (
