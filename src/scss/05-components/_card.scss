@@ -1,13 +1,21 @@
 @use "./../01-abstracts/" as *;
 
 .cards {
-  margin: 93px 24px 83px;
+  margin: 93px auto 83px;
+  max-width: 500px;
   background-color: $color-yellow;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($md-lg) {
+    max-width: 920px;
+    flex-direction: row;
+  }
 }
 
 .card {
-  padding: 48px 47.5px 48px 49px;
+  padding: 48px 48px 49px;
   border-radius: 8px;
 
   &__img {
@@ -22,6 +30,10 @@
   &__text {
     margin-bottom: 25px;
     opacity: 0.75;
+
+    @include breakpoint($md-lg) {
+      margin-bottom: 83px;
+    }
   }
 
   &__btn {
@@ -31,11 +43,16 @@
     background-color: $color-bone;
     border: 2px solid transparent;
     cursor: pointer;
+    transition: 0.2s ease;
 
     &:hover {
-	    background-color: transparent;
-	    border-color: white;
-	    color: white;
+      background-color: transparent;
+      border-color: white;
+      color: white;
+    }
+
+    &:active {
+      transform: scale(0.9);
     }
   }
 
@@ -46,8 +63,8 @@
       color: $color-yellow;
 
       &:hover {
-	      color: inherit;
-      }	
+        color: inherit;
+      }
     }
   }
 
@@ -58,8 +75,8 @@
       color: $color-teal;
 
       &:hover {
-	      color: inherit;
-      }	
+        color: inherit;
+      }
     }
   }
 
@@ -72,8 +89,8 @@
       color: $color-green;
 
       &:hover {
-	      color: inherit;
-      }	
+        color: inherit;
+      }
     }
   }
 }
