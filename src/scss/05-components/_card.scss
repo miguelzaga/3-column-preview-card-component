@@ -9,6 +9,7 @@
   flex-direction: column;
 
   @include breakpoint($md-lg) {
+    margin: 171px auto 129px;
     max-width: 920px;
     flex-direction: row;
   }
